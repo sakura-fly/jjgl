@@ -311,7 +311,7 @@
             }
         </style>
         <div class="right_box4  ">
-            <form class="layui-form" action="" method="get">
+            <form class="layui-form" action="" method="get" lay-filter="btn2">
 
 
                 <div class="layui-form-item">
@@ -511,8 +511,8 @@
 
                     layui.use('form', function () {
 
-
-                        layer = layui.layer
+                        var form = layui.form;
+                        var layer = layui.layer
                             , layedit = layui.layedit
                             , laydate = layui.laydate;
 
@@ -542,7 +542,7 @@
 
                 //						下一步事件开始
                 $(".btn2").on("click", function () {
-                    window.location.href = "http://www.baidu.com";
+                    // window.location.href = "http://www.baidu.com";
                 })
                 //						下一步事件结束
             </script>
