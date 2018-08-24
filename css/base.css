@@ -1,0 +1,15 @@
+/*初始化的基础样式,不但这个网站可以使用,其他网站也可以使用*/
+*{margin: 0;padding: 0;}
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear:both}
+.pt10{padding-top: 10px;}
+.pt20{padding-top: 20px;}
+.font666{color: #666;}
+.font999{color: #999;}
+body a{text-decoration: none;color:#333;}
+body{font:14px/28px "微软雅黑";color:#333;}
+.bottom_left .left_box .left_box3 .layui-nav{height: 200px;background: white;padding: 0;}
+.bottom_left .left_box .left_box3 .layui-nav .layui-nav-item{height: 47px;width:100%;color: #000000;}
+.bottom_left .left_box .left_box3 .layui-nav .layui-nav-item a {color: #000000;}
+.bottom_left .left_box .left_box3 .layui-nav .layui-nav-item a:hover{background: #bdd0db;text-decoration: none;}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="layui/css/layui.css"/>
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css"/>
+	<script type="text/javascript" src="js/jquery-1.8.2.js" ></script>
+	<script src="layui/layui.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js" ></script>
+	<style type="text/css">
+		.main_top{width: auto;min-height:80px;height: 11%;background: #3a526a;}
+		.main_top h1{color: #fff;margin-left: 50px;margin-top: 20px;}
+		.main_top h3{color: #fff;margin-left: 20px;margin-top: 30px;font-size: 16px;}
+		.main_top h1{font-size: 28px;}
+		.main_top .top_ul{ position: absolute;top: 10px;right: 20px;}
+		.main_top .top_ul li a {color: #fff;}
+		.top_ul li{list-style: none;display: inline-block;margin-right: 20px;margin-bottom: 20px;color: #fff;}
+	    .top_ul li a img{position: relative;left: -12px;}
+	</style>
+
+	<body>
+		<div class="main_top po_r">
+			<h1 class="fl">河南省财政资金申报平台</h1>
+			<h3 class="fl">欢迎您！<span>郑州红星机械有限公司</span>！</h3>
+			<div class="clear"></div>
+			<ul class="top_ul fr">
+				<li>
+					<a href="index.html" class="btn"><img src="layui用图/icon_02.png"/>系统首页</a>
+				</li>
+				<li>
+					<a href="per_index.html" class="btn"><img src="layui用图/icon_06.png"/>个人中心</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="btn "><img src="layui用图/icon_3.png" />安全退出</a>
+				</li>
+				<div class="clear"></div>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<!--main_top .end-->
+		<!--main_bottom开始-->
+		<style type="text/css">
+			.main_bottom{width: 100%;min-height:300px;height: 72%; }
+			.main_bottom .bottom_left{min-height: 580px ;height: 100%;min-width: 180px;width: 15%;}
+			.bottom_left .left_box{min-width:170px;width: 94%;padding-left: 10px;padding-top: 10px;}
+			/*bdd0db*/
+			.bottom_left .left_box .left_box1{height: 72px;border:1px solid #bdd0db ;padding: 5px;background: #F3F3F3;} 
+			#mage{width: 100%;background: #1abc9c;text-align: center;font-size: 20px;
+			height:60px ;border-radius: 10px;}
+			#mage a{color: #fff;top: 10px;position: relative;}
+			.bottom_left .left_box .left_box2{height: 42px;border:1px solid #bdd0db ;text-align: center;border-top: none;background: #F3F3F3;}
+			.bottom_left .left_box .left_box2 a{position: relative;top: 10px;} 
+			.bottom_left .left_box .left_box3{text-align: center;border:1px solid #bdd0db ;height: 200px;overflow: hidden;background: #F3F3F3;border-top: none;}
+			
+		</style>
+		<script type="text/javascript">
+			$(function  () {
+				//						申报基金事件开始
+						$("#mage").on("click",function  () {
+							window.location.href="x1.html";
+						})
+//						申报基金事件结束
+			})
+		</script>
+		<div class="main_bottom">
+			<!--bottom_left开始-->
+			<div class="bottom_left fl">
+				<div class="left_box">
+					<div class="left_box1">
+						<div id="mage" class="btn">
+							<a href="#" class="glyphicon glyphicon-pencil"> 申报基金</a>
+						</div>
+					</div>
+					<div class="left_box2">
+						<a href="#">企业申报信息</a>
+					</div>
+					<div class="left_box3">
+						<ul class="layui-nav ">
+							<li  class="layui-nav-item "><a href="">草稿箱</a></li>
+						
+							<li class="layui-nav-item "><a href="">待审核</a></li>
+						
+							<li class="layui-nav-item "><a href="">已通过</a></li>
+						
+							<li class="layui-nav-item "><a href="">未通过</a></li>
+						</ul>
+					</div>
+					<div class="left_box3">
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="clear">
+				
+			</div>
+			<!--bottom_left结束-->
+			<style type="text/css">
+				.main_bottom .bottom_right{min-height: 300px;height:72%;min-width: 200px;width: 85%;
+				position: absolute;top:90px;right: 0px;padding-right: 10px;}
+				.bottom_right .right_box1{border-bottom:1px solid #bdd0db ;padding-top: 10px;
+				padding-bottom: 10px; }
+				.bottom_right .right_box2{border-bottom:1px solid #bdd0db ;height: 150px;padding-top: 20px;}
+				.right_box2 .layui-form-label {padding:15px; width: 100px;}
+				select, textarea { margin: 8px;}
+			</style>
+			<!--bottom_right开始-->
+			<div class="bottom_right ">
+				
+				<div class="right_box1">
+					当前位置：首页 > 待审核
+				</div>
+				
+				<div class="right_box2">
+					<div class="layui-form-item">
+						
+					    <div class="layui-inline">
+					      <label class="layui-form-label">基金类型：</label>
+					      <div class="layui-input-inline">
+					        <select name="quiz"style="width: 100%;height: 38px;border: 1px solid #e6e6e6;">
+					          <option value="">请选择</option>
+					          
+					            <option value="现代农业">现代农业</option>
+					            <option value="先进制造业">先进制造业</option>
+					            <option value="先进文化">先进文化</option>
+					             <option value="互联网+">互联网+</option>
+					          
+					        </select>
+					      </div>
+					    </div>
+					    
+					    <div class="layui-inline">
+					      <label class="layui-form-label">基金类型：</label>
+					      <div class="layui-input-inline">
+					        <select name="quiz"style="width: 100%;height: 38px;border: 1px solid #e6e6e6;">
+					          <option value="">请选择</option>
+					         
+					            <option value="现代农业">现代农业</option>
+					            <option value="先进制造业">先进制造业</option>
+					            <option value="先进文化">先进文化</option>
+					             <option value="互联网+">互联网+</option>
+					          
+					        </select>
+					      </div>
+					    </div>
+					    <style type="text/css">
+					    	.btn_s{position: relative;top: -10px;}
+					    </style>
+					    <div class="layui-inline">
+					      <label class="layui-form-label">日期选择</label>
+					      <div class="layui-input-block">
+					        <input type="date" name="date" id="date1" autocomplete="off" class="layui-input">
+					      </div>
+					    </div>
+					</div>
+					  <div class="layui-form-item">
+					  	<div class="layui-inline">
+					    <label class="layui-form-label">关键字：</label>
+					    <div class="layui-input-inline">
+					      <input type="text" name="username"  autocomplete="off" placeholder="请输入标题" class="layui-input">
+					    </div>
+					    </div>
+					    <button class="btn btn-primary btn_s" >　筛选　</button>
+					    <button class="btn btn_s">恢复选择</button>
+					  </div>
+				</div>
+				
+				<style type="text/css">
+					.right_box3 table tbody tr 
+				</style>
+				<div class="right_box3">
+					<table class="  table table-bordered">
+						<tbody id="tb_tj" >
+							<tr class="info">
+								<td>序号</td>
+								<td>主题</td>
+								<td>基金类型</td>
+								<td>申报类型</td>
+								<td>申报时间</td>
+								<td>操作</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>主题</td>
+								<td>基金类型</td>
+								<td>申报类型</td>
+								<td>申报时间</td>
+								<td>操作</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>主题</td>
+								<td>基金类型</td>
+								<td>申报类型</td>
+								<td>申报时间</td>
+								<td>操作</td>
+							</tr>
+
+						</tbody>
+					</table>
+					
+				</div>
+				
+				
+			</div>
+			<!--bottom_right结束-->
+			
+		</div>
+		<!--main_bottom结束-->
+		
+		<!--footer开始-->
+		<style type="text/css">
+			.footer{min-height:90px;height: 17%;background: #f3f3f3;display: flex;justify-content: center;padding-top: 30px;}
+		</style>
+		<div class="footer">
+			版权所有&nbsp;  河南农开产业基金投资有限公司　客服电话：0371-888888888
+		</div>
+		<!--footer结束-->
+	</body>
+
+</html>
